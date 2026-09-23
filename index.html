@@ -1,0 +1,210 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Reshmitha Paricha — Data Analyst | Business Analytics</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6f4;--card:#fff;--ink:#11201e;--mut:#56676506;--m:#56676a;--line:#d5dedb;--ac:#0b6b5f;--ac2:#b4530a;--tint:#e1f1ed;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1716;--card:#152322;--ink:#e6efed;--m:#9cb0ad;--line:#26393a;--ac:#4fd1bd;--ac2:#f0a35e;--tint:#173330}}
+:root[data-theme=dark]{--bg:#0e1716;--card:#152322;--ink:#e6efed;--m:#9cb0ad;--line:#26393a;--ac:#4fd1bd;--ac2:#f0a35e;--tint:#173330}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px;height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "IBM Plex Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:.4rem}p{margin:.4rem 0}a{color:inherit}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}section{padding:72px 0;border-top:1px solid var(--line)}.sub{color:var(--m);max-width:60ch}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+#bar{position:fixed;top:0;left:0;height:3px;background:var(--ac);width:0;z-index:60}
+nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav .w{display:flex;align-items:center;gap:14px;height:56px}nav b{font-family:"Bricolage Grotesque";white-space:nowrap}
+nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0;overflow-x:auto;flex:1;scrollbar-width:none}
+nav li a{display:block;padding:6px 10px;border-radius:6px;text-decoration:none;color:var(--m);font-size:.9rem;white-space:nowrap}
+nav li a.on{color:var(--ink);background:var(--tint)}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:500 .95rem "IBM Plex Sans";text-decoration:none;cursor:pointer}
+.btn.p{background:var(--ac);border-color:var(--ac);color:var(--bg)}.btn.s{padding:6px 12px;font-size:.85rem}
+.chip{padding:5px 12px;border-radius:99px;border:1px solid var(--line);background:none;color:var(--ink);cursor:pointer;font:.85rem "IBM Plex Sans";white-space:nowrap}
+.chip[aria-pressed=true],.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.row{display:flex;gap:8px;flex-wrap:wrap}.scroll{overflow-x:auto;flex-wrap:nowrap;padding-bottom:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center;padding:64px 0}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);letter-spacing:-.03em}.role{font-size:1.15rem;color:var(--ac);font-weight:500;margin:14px 0 6px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.k{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--bg)}.k small{color:var(--m);display:block}.k b{font:700 1.4rem "Bricolage Grotesque"}
+.note{font-size:.78rem;color:var(--m);margin-top:10px}
+svg text{fill:var(--m);font:11px "IBM Plex Sans"}svg .b{fill:var(--ac);cursor:pointer;transition:opacity .15s}svg .b:hover{opacity:.7}svg .sel{fill:var(--ac2)}svg .ln{fill:none;stroke:var(--ac);stroke-width:2.5}svg .gr{stroke:var(--line)}
+.pipe{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin:22px 0}.pipe button{padding:12px 6px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;cursor:pointer;font:600 .8rem "Bricolage Grotesque"}
+.pipe button[aria-selected=true]{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.g3{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.pc{text-align:left;cursor:pointer;color:inherit;font:inherit;display:flex;flex-direction:column;gap:8px;transition:border-color .15s}.pc:hover{border-color:var(--ac)}
+.tag{font-size:.75rem;padding:2px 8px;border-radius:99px;background:var(--tint);color:var(--ac)}
+dialog{max-width:860px;width:calc(100% - 24px);max-height:92vh;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);padding:0}dialog::backdrop{background:#0009}
+.mb{padding:22px}.sec{border-top:1px solid var(--line);padding:14px 0}.sec h3{font-size:1rem;color:var(--ac)}
+select{padding:8px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
+pre{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px;overflow-x:auto;font-size:.82rem;margin:8px 0}
+table{width:100%;border-collapse:collapse;font-size:.85rem}td,th{padding:5px 8px;border-bottom:1px solid var(--line);text-align:left}
+.ph{border:1px dashed var(--ac2);color:var(--ac2);border-radius:6px;padding:8px 10px;font-size:.85rem}
+.tl{border-left:2px solid var(--line);padding-left:18px;margin-left:6px}.tl>div{margin-bottom:18px}
+@media(max-width:860px){.hero,.g2{grid-template-columns:1fr}.pipe{grid-template-columns:repeat(3,1fr)}nav b{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+<div id="bar"></div>
+<nav aria-label="Primary"><div class="w"><b>RP</b><ul id="nl"></ul><button class="chip" id="th" aria-label="Toggle theme">Theme</button><a class="btn p s" href="/resume.pdf" download>Resume</a></div></nav>
+<main>
+<section id="home" style="border:0;padding:0"><div class="w hero"><div>
+<h1>Turning data into decisions.</h1><div class="role">Data Analyst | Business Analytics</div>
+<p class="sub">Business Analytics student focused on using SQL, Python, Power BI and Excel to transform raw data into actionable business insights.</p>
+<div class="row" style="margin:22px 0 14px"><a class="btn p" href="#projects">Explore my work</a><a class="btn" href="/resume.pdf" download>Download resume</a></div>
+<div class="row"><a class="btn s" href="https://github.com/" target="_blank" rel="noopener">GitHub</a><a class="btn s" href="https://www.linkedin.com/in/reshmithaparicha" target="_blank" rel="noopener">LinkedIn</a><a class="btn s" href="mailto:reshmitha1279@gmail.com">Email</a></div></div>
+<div class="card" aria-label="Sample analytics panel"><div class="kpis" id="hk"></div><div id="hc" style="margin-top:14px"></div><p class="note">Portfolio visualization — sample analytics interface, not real company data.</p></div></div></section>
+
+<section id="about"><div class="w"><h2>I combine technical data analysis with business understanding.</h2>
+<p class="sub">Final-year BBA Business Analytics student in Hyderabad, targeting Data Analyst, Junior Data Analyst and Business Analyst internships. Marketing analytics, SEO and market research give me the business context behind the numbers. I also vibe code: I build tools and sites with AI assistance, including this portfolio. Select a stage to see how I work.</p>
+<div class="pipe" role="tablist" id="pp"></div><div class="card" id="pd" role="tabpanel" aria-live="polite"></div></div></section>
+
+<section id="skills"><div class="w"><h2>Skills, with evidence</h2><p class="sub">Select a skill to see where I use it.</p>
+<div class="g2" style="margin-top:20px"><div id="sk" style="display:grid;gap:14px"></div><div class="card" id="sd" aria-live="polite" style="align-self:start;position:sticky;top:76px"></div></div></div></section>
+
+<section id="projects"><div class="w"><h2>Projects</h2><p class="sub">Five case studies, each following the same structure from business problem to recommendation. The Sales Performance Dashboard comes from my resume; the other case studies use placeholder data until final datasets are added.</p>
+<div class="row scroll" id="fb" style="margin:18px 0" role="group" aria-label="Project filters"></div><div class="g3" id="pg"></div></div></section>
+<dialog id="md" aria-label="Project case study"></dialog>
+
+<section id="lab"><div class="w"><h2>Data Lab</h2><p class="sub">Interactive sample — built to demonstrate analytical thinking.</p>
+<div class="card" style="margin-top:20px"><div class="row" id="lc" style="margin-bottom:14px"></div><div class="kpis" id="lk"></div><div id="lch" style="margin-top:14px"></div><p class="note" id="ln">Sample e-commerce dataset (generated). Click a point for detail.</p></div>
+
+<h3 style="margin:48px 0 6px;font-size:1.5rem">From data to insight</h3><p class="sub">Press Analyze to walk a tiny dataset through the workflow.</p>
+<div class="g2" style="margin-top:16px"><div class="card"><div class="row" style="justify-content:space-between;align-items:center"><b id="fs">Raw data</b><button class="btn p s" id="fa">Analyze</button></div><div id="ft" style="margin-top:10px;overflow-x:auto"></div></div>
+<div class="card"><b>Business insight</b><div id="fi" style="margin-top:10px" aria-live="polite"></div></div></div></div></section>
+
+<section id="experience"><div class="w"><h2>Experience &amp; education</h2>
+<div class="g2" style="margin-top:20px"><div class="tl">
+<div><b>Analytics Internship</b> · Company name · Duration<div class="ph" style="margin-top:6px">Placeholder — company, dates, tools and what you analyzed go here. Nothing is invented.</div></div>
+<div><b>Content &amp; Marketing</b> · Kairos Technology Pvt Ltd · 12/2025 – Present, Hyderabad<p class="sub" style="font-size:.9rem">Created and SEO-optimized technology blogs and social content, ran competitor and market research on trends and positioning, and learned how agentic AI solutions are architected and implemented.</p><p class="note"><b>Analytics relevance:</b> market and competitor research, with content decisions guided by search visibility and audience engagement.</p></div>
+<div><b>Student Trainee</b> · Startup ecosystem programs · 04/2025 – 11/2025<p class="sub" style="font-size:.9rem">Exposure to innovation, networking and business development for women-led startups.</p></div>
+<div><b>Fundraising Intern</b> · Animal welfare NGO · 04/2025 – 06/2025<p class="sub" style="font-size:.9rem">Supported fundraising campaigns, donor outreach and resource mobilization.</p></div>
+<div><b>Also</b><p class="sub" style="font-size:.9rem">Community Engagement Volunteer (2024) · NCC Cadet, C Certificate (2022 – 2024)</p></div></div>
+<div class="card"><b>BBA — Business Analytics</b><p class="sub" style="font-size:.9rem">Raja Bahadur Venkata Rama Reddy College · 05/2023 – 05/2026 · 9.3 CGPA</p><div class="row" style="margin-top:10px" id="ed"></div><b style="display:block;margin-top:16px">Certifications</b><div class="row" style="margin-top:8px"><span class="tag">Digital Marketing — HubSpot Academy</span><span class="tag">Google Analytics 4 — Udemy</span><span class="tag">Google Ads — Udemy</span><span class="tag">Content-Led SEO — Semrush</span><span class="tag">Email Marketing — Great Learning</span></div></div></div></div></section>
+
+<section id="resume"><div class="w card" style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between"><div><h2>Want the one-page version?</h2><p class="sub">Add your PDF as <code>/resume.pdf</code>.</p></div><div class="row"><a class="btn p" href="/resume.pdf" download>Download resume</a><a class="btn" href="/resume.pdf" target="_blank" rel="noopener">View resume</a></div></div>
+<div class="w" style="margin-top:20px"><div class="card"><b>GitHub</b><p class="sub">Sample content — repository list appears here once your GitHub URL is connected.</p><a class="btn s" href="https://github.com/" target="_blank" rel="noopener">View GitHub</a></div></div></section>
+
+<section id="contact"><div class="w"><h2>Let's talk data.</h2><p class="sub">Interested in data analytics, business intelligence or analytics opportunities?</p>
+<div class="row" style="margin-top:18px"><a class="btn p" href="https://www.linkedin.com/in/reshmithaparicha" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="mailto:reshmitha1279@gmail.com">Email</a><a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a></div></div></section>
+</main>
+<footer class="w note" style="padding:24px 20px">© Reshmitha Paricha · Hyderabad, India</footer>
+<script>
+const $=s=>document.querySelector(s),H=(e,h)=>e.innerHTML=h;
+const NAV=[["home","Home"],["about","About"],["skills","Skills"],["projects","Projects"],["lab","Data Lab"],["experience","Experience"],["resume","Resume"],["contact","Contact"]];
+H($("#nl"),NAV.map(([i,t])=>`<li><a href="#${i}">${t}</a></li>`).join(""));
+const links=[...document.querySelectorAll("nav li a")];
+new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.hash=="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"}).observe&&NAV.forEach(([i])=>{});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.hash=="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
+NAV.forEach(([i])=>io.observe($("#"+i)));
+addEventListener("scroll",()=>$("#bar").style.width=100*scrollY/(document.documentElement.scrollHeight-innerHeight)+"%",{passive:true});
+$("#th").onclick=()=>{const r=document.documentElement,d=(r.dataset.theme||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"))=="dark";r.dataset.theme=d?"light":"dark"};
+
+/* chart: bars or line, clickable points */
+function chart(d,type,fmt=v=>v,sel=-1){const W=600,Ht=200,p=28,mx=Math.max(...d.map(x=>x[1]))||1,n=d.length,bw=(W-2*p)/n;
+const y=v=>Ht-p-(v/mx)*(Ht-2*p),x=i=>p+bw*i+bw/2;let s=`<svg viewBox="0 0 ${W} ${Ht}" width="100%" role="img" aria-label="Chart">`;
+[0,.5,1].forEach(f=>s+=`<line class="gr" x1="${p}" x2="${W-p}" y1="${y(mx*f)}" y2="${y(mx*f)}"/><text x="0" y="${y(mx*f)+4}">${fmt(mx*f)}</text>`);
+if(type=="line"){s+=`<polyline class="ln" points="${d.map((v,i)=>x(i)+","+y(v[1])).join(" ")}"/>`;d.forEach((v,i)=>s+=`<circle class="b ${i==sel?"sel":""}" data-i="${i}" cx="${x(i)}" cy="${y(v[1])}" r="6" tabindex="0"><title>${v[0]}: ${fmt(v[1])}</title></circle>`)}
+else d.forEach((v,i)=>s+=`<rect class="b ${i==sel?"sel":""}" data-i="${i}" x="${p+bw*i+bw*.15}" y="${y(v[1])}" width="${bw*.7}" height="${Ht-p-y(v[1])}" rx="3" tabindex="0"><title>${v[0]}: ${fmt(v[1])}</title></rect>`);
+d.forEach((v,i)=>{if(n<7||i%2==0)s+=`<text x="${x(i)}" y="${Ht-8}" text-anchor="middle">${v[0]}</text>`});return s+"</svg>"}
+const money=v=>v>=1e3?(v/1e3).toFixed(v>=1e4?0:1)+"k":Math.round(v);
+
+/* hero panel */
+const hk=[["Revenue",128,"k"],["Customers",4.2,"k"],["Conversion",3.8,"%"],["Growth",12,"%"]];
+H($("#hk"),hk.map(k=>`<div class="k"><small>${k[0]}</small><b data-v="${k[1]}" data-u="${k[2]}">0</b></div>`).join(""));
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+document.querySelectorAll("#hk b").forEach(b=>{const t=+b.dataset.v,u=b.dataset.u,f=v=>(t%1?v.toFixed(1):Math.round(v))+u;if(reduce)return b.textContent=f(t);let s=performance.now();(function st(n){const q=Math.min(1,(n-s)/1100);b.textContent=f(t*(1-Math.pow(1-q,3)));q<1&&requestAnimationFrame(st)})(s)});
+H($("#hc"),chart(["J","F","M","A","M","J","J","A","S","O","N","D"].map((m,i)=>[m,40+i*6+(i%3)*9]),"bar"));
+
+/* workflow */
+const ST=[["Raw data","Messy datasets, CSVs, databases and business records.","SQL, Excel, CSV","Order export with blanks and mixed date formats","p1"],
+["Clean","Missing values, duplicates, inconsistent formats and outliers.","Python (Pandas), Power Query","Duplicates removed, dates standardised","p2"],
+["Analyze","SQL queries, Python EDA and statistical analysis.","SQL, Python, NumPy","Monthly revenue with window functions","p5"],
+["Visualize","Dashboards that answer one question at a time.","Power BI, Tableau, Excel","KPI dashboard with filters","p3"],
+["Insight","Identify patterns, trends and anomalies.","KPI analysis, statistics","Repeat purchases concentrated in a small segment","p2"],
+["Decision","Translate analysis into business recommendations.","Business analysis","Prioritised action list for the business","p4"]];
+H($("#pp"),ST.map((s,i)=>`<button role="tab" aria-selected="${i==0}" data-i="${i}">${s[0]}</button>`).join(""));
+function stage(i){document.querySelectorAll("#pp button").forEach((b,j)=>b.setAttribute("aria-selected",i==j));const s=ST[i];H($("#pd"),`<h3>${s[0]}</h3><p>${s[1]}</p><p><b>Tools:</b> ${s[2]}</p><p><b>Example output:</b> ${s[3]}</p><button class="btn s" data-open="${s[4]}">See related project</button>`)}
+$("#pp").onclick=e=>e.target.dataset.i&&stage(+e.target.dataset.i);stage(0);
+
+/* projects */
+const P=[
+{id:"p6",n:"Sales Performance Dashboard",t:["Power BI","Business Analytics"],k:"Regional sales and growth trends",pt:"Sales analytics",q:"Where is sales performance strongest and weakest across regions, and which growth patterns should guide decisions?",an:"Interactive Power BI dashboard visualizing regional sales performance and trends, plus analysis of sales data to identify growth patterns and support data-driven decisions.",kp:[["Sales","—"],["Growth","—"],["Top region","—"]],ch:["Region 1","Region 2","Region 3","Region 4","Region 5"],fl:["All periods","Period 1","Period 2","Period 3"]},
+{id:"p1",n:"E-Commerce Sales & Customer Analytics",t:["SQL","Python","Power BI","Business Analytics"],k:"Revenue, AOV, repeat rate",pt:"Sales analytics",
+q:"How can an e-commerce business understand revenue performance, customer behavior and product performance to make better commercial decisions?",
+an:"Revenue and order analysis, AOV, customer segmentation, repeat purchases, category, product and regional performance, monthly trends.",kp:[["Revenue","—"],["Orders","—"],["AOV","—"],["Customers","—"],["Repeat rate","—"]],
+ch:["Electronics","Fashion","Home","Beauty","Sports"],fl:["All regions","North","South","East","West"]},
+{id:"p2",n:"Customer Churn & Retention Analytics",t:["SQL","Python","Power BI","Business Analytics"],k:"Churn rate, revenue at risk",pt:"Retention analytics",
+q:"Who is leaving, why are they leaving, which segments are most affected, and what revenue is at risk?",
+an:"Churn rate, tenure, contract type, monthly charges, segments, service usage, revenue at risk.",kp:[["Churn rate","—"],["Avg tenure","—"],["Revenue at risk","—"]],
+ch:["Month-to-month","One year","Two year","Tenure <12m","Tenure 12m+"],fl:["All segments","Contract: monthly","Contract: annual","New customers","Long-term"]},
+{id:"p3",n:"Marketing Campaign Performance Analytics",t:["SQL","Power BI","Excel","Marketing Analytics"],k:"CPL, conversion, ROAS",pt:"Marketing analytics",
+q:"Which channels and campaigns turn spend into leads and revenue most efficiently?",
+an:"Impressions, clicks, CTR, CPC, leads, CPL, conversion rate, revenue and ROAS; funnel from impressions to revenue.",kp:[["Spend","—"],["Leads","—"],["CPL","—"],["Conv. rate","—"],["ROAS","—"]],
+ch:["Google Ads","Meta Ads","Email","LinkedIn","Organic"],fl:["All audiences","Prospects","Returning","Lookalike"]},
+{id:"p4",n:"Supply Chain & Inventory Analytics",t:["Python","SQL","Power BI","Business Analytics"],k:"Fill rate, on-time delivery",pt:"Operations analytics",
+q:"Where do stock-outs, long lead times and supplier delays hurt fulfillment, and what can be done about them?",
+an:"Inventory levels, stock-outs, lead time, supplier performance, fulfillment, demand and delivery delays.",kp:[["Inv. turnover","—"],["Fill rate","—"],["On-time delivery","—"],["Stock-out rate","—"],["Avg lead time","—"]],
+ch:["Supplier A","Supplier B","Supplier C","Supplier D","Supplier E"],fl:["All warehouses","Warehouse 1","Warehouse 2","Warehouse 3"]},
+{id:"p5",n:"SQL Business Intelligence Case Study",t:["SQL","Business Analytics"],k:"30–40 business questions",pt:"SQL case study",
+q:"Can a relational retail database (customers, orders, order_items, products, categories, payments, stores) answer core business questions with clean SQL?",
+an:"JOINs, GROUP BY, CASE, CTEs, subqueries and window functions (RANK, LAG, LEAD) across 30–40 business questions.",kp:[["Tables","7"],["Questions","30–40"]],ch:["Joins","CTEs","Windows","Subqueries","CASE"],fl:["All"]}];
+const SQ=[["Top customers by revenue","JOIN + GROUP BY",`SELECT c.customer_id, SUM(oi.quantity*oi.unit_price) AS revenue\nFROM customers c\nJOIN orders o ON o.customer_id=c.customer_id\nJOIN order_items oi ON oi.order_id=o.order_id\nGROUP BY c.customer_id\nORDER BY revenue DESC\nLIMIT 10;`],
+["Month-over-month growth","CTE + LAG",`WITH m AS (\n  SELECT DATE_TRUNC('month',order_date) AS mth, SUM(total) AS rev\n  FROM orders GROUP BY 1)\nSELECT mth, rev,\n  ROUND(100.0*(rev-LAG(rev) OVER (ORDER BY mth))/LAG(rev) OVER (ORDER BY mth),1) AS mom_pct\nFROM m;`],
+["Rank products within category","RANK window",`SELECT category, product, revenue,\n  RANK() OVER (PARTITION BY category ORDER BY revenue DESC) AS rnk\nFROM product_revenue;`],
+["Repeat purchase rate","Subquery + CASE",`SELECT ROUND(100.0*SUM(CASE WHEN n>1 THEN 1 ELSE 0 END)/COUNT(*),1) AS repeat_pct\nFROM (SELECT customer_id, COUNT(*) AS n FROM orders GROUP BY customer_id) t;`]];
+const seed=(s)=>{let x=0;for(const c of s)x=(x*31+c.charCodeAt(0))%997;return x};
+const val=(p,i,f)=>30+((seed(p.id+p.ch[i])+f*37+i*23)%60);
+let flt="All";const TAGS=["All","SQL","Python","Power BI","Excel","Business Analytics","Marketing Analytics"];
+H($("#fb"),TAGS.map(t=>`<button class="chip" aria-pressed="${t==flt}">${t}</button>`).join(""));
+function grid(){H($("#pg"),P.filter(p=>flt=="All"||p.t.includes(flt)).map(p=>`<button class="card pc" data-open="${p.id}"><span class="tag">${p.pt}</span><h3 style="font-size:1.15rem">${p.n}</h3><span class="sub" style="font-size:.9rem">${p.q}</span><span class="row">${p.t.map(t=>`<span class="tag" style="background:none;border:1px solid var(--line);color:var(--m)">${t}</span>`).join("")}</span><small style="color:var(--m)">Key metric: ${p.k} · Sample dataset — replace with actual project data</small><b style="color:var(--ac)">View case study</b></button>`).join(""))}
+$("#fb").onclick=e=>{if(e.target.tagName!="BUTTON")return;flt=e.target.textContent;document.querySelectorAll("#fb button").forEach(b=>b.setAttribute("aria-pressed",b.textContent==flt));grid()};grid();
+function open(id){const p=P.find(x=>x.id==id),m=$("#md");let f=0;
+const render=()=>{const d=p.ch.map((c,i)=>[c.length>10?c.slice(0,9)+"…":c,val(p,i,f)]);
+H(m,`<div class="mb"><div class="row" style="justify-content:space-between"><h2 style="font-size:1.6rem">${p.n}</h2><button class="btn s" id="mc">Close</button></div>
+<div class="sec"><h3>01 Business problem</h3><p>${p.q}</p></div>
+<div class="sec"><h3>02 Dataset</h3><div class="ph">Sample dataset — replace with actual project data (source, rows, period).</div></div>
+<div class="sec"><h3>03 Data preparation</h3><div class="ph">Placeholder — describe cleaning steps you actually performed.</div></div>
+<div class="sec"><h3>04 Analysis</h3><p>${p.an}</p>${p.id=="p5"?`<div class="row" style="margin:8px 0" id="sqb">${SQ.map((q,i)=>`<button class="chip" data-q="${i}">${q[0]}</button>`).join("")}</div><div id="sqo"></div>`:""}</div>
+<div class="sec"><h3>05 Visualization</h3>${p.id=="p5"?"":`<div class="row" style="margin-bottom:10px"><label>Filter <select id="mf">${p.fl.map((o,i)=>`<option value="${i}" ${i==f?"selected":""}>${o}</option>`).join("")}</select></label></div><div class="kpis">${p.kp.map(k=>`<div class="k"><small>${k[0]}</small><b>${k[1]}</b></div>`).join("")}</div><div style="margin-top:10px">${chart(d,"bar",v=>Math.round(v))}</div><p class="note">Mockup with sample values — the chart responds to the filter; KPIs fill in once real data is added.</p>`}</div>
+<div class="sec"><h3>06 Key insights</h3><div class="ph">Placeholder — to be written from the real dataset.</div></div>
+<div class="sec"><h3>07 Business recommendations</h3><div class="ph">Placeholder — to be written from the real dataset.</div></div>
+<div class="sec"><h3>08 Technical stack</h3><div class="row">${p.t.map(t=>`<span class="tag">${t}</span>`).join("")}</div></div>
+<div class="sec"><h3>09 GitHub</h3><a class="btn s" href="https://github.com/" target="_blank" rel="noopener">View repository (add link)</a></div></div>`);
+$("#mc").onclick=()=>m.close();const s=$("#mf");if(s)s.onchange=()=>{f=+s.value;render();$("#mf").focus()};
+const sb=$("#sqb");if(sb)sb.onclick=e=>{const q=SQ[e.target.dataset.q];if(q)H($("#sqo"),`<b>${q[1]}</b><pre>${q[2].replace(/</g,"&lt;")}</pre>`)}};
+render();if(!m.open)m.showModal()}
+document.addEventListener("click",e=>{const o=e.target.closest("[data-open]");if(o)open(o.dataset.open);const d=$("#md");if(e.target==d)d.close()});
+
+/* skills */
+const SK={SQL:["Joins","CTEs","Subqueries","Window functions","Aggregations","CASE statements"],Python:["Pandas","NumPy","Matplotlib","Seaborn","Data cleaning","EDA"],BI:["Power BI","DAX","Tableau"],Excel:["Pivot tables","XLOOKUP","Power Query","Dashboards","Data analysis"],"Vibe coding":["AI-assisted building","Prompting","Rapid prototyping"],Analytics:["KPI analysis","Statistical analysis","Business analysis","Customer analytics","Marketing analytics"]};
+const VN={"AI-assisted building":"I build tools and sites with AI assistance — this portfolio included — and used AI tools on my Shopify storefront project.","Prompting":"I use structured prompts to draft, debug and iterate on analysis and site work.","Rapid prototyping":"Quick interactive mockups (like the dashboards here) to test ideas before deep analysis."};const MAP={"Joins":"SQL","CTEs":"SQL","Subqueries":"SQL","Window functions":"SQL","Aggregations":"SQL","CASE statements":"SQL","Pandas":"Python","NumPy":"Python","Matplotlib":"Python","Seaborn":"Python","Data cleaning":"Python","EDA":"Python","Power BI":"Power BI","DAX":"Power BI","Tableau":null,"Pivot tables":"Excel","XLOOKUP":"Excel","Power Query":"Excel","Dashboards":"Power BI","Data analysis":"Excel","KPI analysis":"Business Analytics","Statistical analysis":"Python","Business analysis":"Business Analytics","Customer analytics":"Business Analytics","Marketing analytics":"Marketing Analytics"};
+H($("#sk"),Object.entries(SK).map(([g,a])=>`<div><b>${g}</b><div class="row" style="margin-top:6px">${a.map(s=>`<button class="chip" data-s="${s}">${s}</button>`).join("")}</div></div>`).join(""));
+function skill(s){document.querySelectorAll("#sk .chip").forEach(c=>c.classList.toggle("on",c.dataset.s==s));const t=MAP[s],ps=t?P.filter(p=>p.t.includes(t)):[];
+H($("#sd"),`<b>Where I use ${s}</b>${ps.length?`<div style="display:grid;gap:6px;margin-top:10px">${ps.map(p=>`<button class="btn s" data-open="${p.id}" style="justify-content:flex-start">${p.n}</button>`).join("")}</div>`:`<p class="sub">${VN[s]||"Covered in coursework; no portfolio project yet."}</p>`}`)}
+$("#sk").onclick=e=>e.target.dataset.s&&skill(e.target.dataset.s);skill("Joins");
+H($("#ed"),["Business Analytics","SQL","Statistics","Database Management","R Programming","Tableau","Business Quantitative Methods"].map(c=>`<span class="tag">${c}</span>`).join(""));
+
+/* data lab */
+const MO=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],CT=["Electronics","Fashion","Home"],MT=["Revenue","Orders","Profit","Customers"];
+const base=(m,c,i)=>{const s=1+.06*i+(i>8?.35:0)+((seed(CT[c]+i)%20)/100);return[9e3,140,2100,90][m]*s*[1.4,1,.8][c]};
+const L={m:0,c:-1,q:0,t:"bar",sel:-1};
+function lab(){const d0=MO.map((mo,i)=>[mo,[0,1,2].filter(c=>L.c<0||c==L.c).reduce((a,c)=>a+base(L.m,c,i),0)]);
+let d=d0;if(L.q){d=[0,1,2,3].map(q=>["Q"+(q+1),d0.slice(q*3,q*3+3).reduce((a,x)=>a+x[1],0)])}
+const tot=d.reduce((a,x)=>a+x[1],0),pk=d.reduce((a,x)=>x[1]>a[1]?x:a),ch=100*(d[d.length-1][1]/d[0][1]-1);
+const sel=(a,k,o)=>`<label>${k} <select data-k="${a}">${o.map((x,i)=>`<option value="${i}" ${(a=="c"?L.c+1:L[a])==i?"selected":""}>${x}</option>`).join("")}</select></label>`;
+H($("#lc"),sel("m","Metric",MT)+sel("c","Category",["All",...CT])+sel("q","Period",["Monthly","Quarterly"])+`<button class="chip" data-t="bar" aria-pressed="${L.t=="bar"}">Bars</button><button class="chip" data-t="line" aria-pressed="${L.t=="line"}">Line</button>`);
+H($("#lk"),[["Total",money(tot)],["Average",money(tot/d.length)],["Peak",pk[0]],["First → last",(ch>=0?"+":"")+ch.toFixed(0)+"%"]].map(k=>`<div class="k"><small>${k[0]}</small><b>${k[1]}</b></div>`).join(""));
+H($("#lch"),chart(d,L.t,money,L.sel));if(L.sel>=0&&d[L.sel])$("#ln").textContent=`${d[L.sel][0]}: ${MT[L.m]} ${money(d[L.sel][1])} (sample data)`;
+$("#lch").onclick=e=>{const i=e.target.dataset.i;if(i!=null){L.sel=+i;lab()}};window._d=d}
+$("#lc").onchange=e=>{const k=e.target.dataset.k;L[k]=k=="c"?+e.target.value-1:+e.target.value;L.sel=-1;lab()};
+$("#lc").onclick=e=>{if(e.target.dataset.t){L.t=e.target.dataset.t;lab()}};lab();
+
+/* from data to insight */
+const RAW=[["C-1041","03/11/2024","1,280","electronics ","N"],["C-1041","2024-11-03","1280","Electronics","North"],["C-2210","11-Nov-24","","Fashion","S"],["C-3305","2024-12-02","940","Home","East"]],CLN=[["C-1041","2024-11-03","1280","Electronics","North"],["C-2210","2024-11-11","760*","Fashion","South"],["C-3305","2024-12-02","940","Home","East"]];
+const stg=["Raw data","Cleaned data","Analysis","Visualization","Insight"];let fi=0,tm;
+const tb=(r,h)=>`<table><tr>${["Customer_ID","Order_Date","Revenue","Category","Region"].map(x=>`<th>${x}</th>`).join("")}</tr>${r.map(x=>`<tr>${x.map(c=>`<td>${c||"<i>null</i>"}</td>`).join("")}</tr>`).join("")}</table>`;
+function fdraw(){$("#fs").textContent=stg[fi];const t=$("#ft");
+if(fi==0)H(t,tb(RAW));else if(fi==1)H(t,tb(CLN)+`<p class="note">Duplicate removed, dates standardised, casing fixed. *Missing value imputed for illustration.</p>`);
+else if(fi==2)H(t,`<pre>SELECT QUARTER(order_date) q, SUM(revenue), COUNT(DISTINCT customer_id)\nFROM orders GROUP BY 1;</pre>`);else H(t,chart([["Q1",52],["Q2",58],["Q3",61],["Q4",96]],"bar"));
+H($("#fi"),fi<4?`<p class="sub">Waiting for analysis…</p>`:`<p>Revenue increased significantly in Q4, while repeat purchases remained concentrated among a smaller customer segment.</p><p class="note">Illustrative example on toy data.</p>`)}
+$("#fa").onclick=()=>{clearInterval(tm);fi=0;fdraw();tm=setInterval(()=>{fi++;fdraw();if(fi>=4)clearInterval(tm)},reduce?200:1000)};fdraw();
+</script></body></html>
